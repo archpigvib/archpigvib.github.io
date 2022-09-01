@@ -205,6 +205,19 @@ quercetin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
+const bl = document.getElementById('bl');
+bl.onclick = function() {
+  dataPath = '../data/bl.csv'
+  graphTitle = 'Bl';
+  document.getElementById('about').style.visibility = 'hidden';
+  document.getElementById('about').style.display = 'none';
+  while (document.getElementById("structure").firstChild) {
+    document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
+  };
+  loadData();
+  setTimeout(plotGraph,500);
+};
+
 function loadData() {
   data = [];
   x = [];

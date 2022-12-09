@@ -15,6 +15,19 @@ alizarin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
+const azuritIR = document.getElementById('azuritIR');
+azurit.onclick = function() {
+  dataPath = '../data/Azurite_IR.CSV'
+  graphTitle = 'Azurite IR';
+  document.getElementById('about').style.visibility = 'hidden';
+  document.getElementById('about').style.display = 'none';
+  while (document.getElementById("structure").firstChild) {
+    document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
+  };
+  loadData();
+  setTimeout(plotGraph,500);
+};
+
 const azurit = document.getElementById('azurit');
 azurit.onclick = function() {
   dataPath = '../data/Azurit.CSV'

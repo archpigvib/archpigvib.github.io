@@ -2,7 +2,7 @@
 const alizarin = document.getElementById('alizarin');
 alizarin.onclick = function() {
   dataPath = '../data/Alizarin.CSV'
-  graphTitle = 'Alizarin spectrum';
+  graphTitle = 'Alizarin Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -15,23 +15,10 @@ alizarin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const azuritIR = document.getElementById('azuritIR');
-azurit.onclick = function() {
-  dataPath = '../data/Azurite_IR.CSV'
-  graphTitle = 'Azurite IR';
-  document.getElementById('about').style.visibility = 'hidden';
-  document.getElementById('about').style.display = 'none';
-  while (document.getElementById("structure").firstChild) {
-    document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
-  };
-  loadData();
-  setTimeout(plotGraph,500);
-};
-
 const azurit = document.getElementById('azurit');
 azurit.onclick = function() {
   dataPath = '../data/Azurit.CSV'
-  graphTitle = 'Azurit spectrum';
+  graphTitle = 'Azurite Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -44,7 +31,7 @@ azurit.onclick = function() {
 const brazilein = document.getElementById('brazilein');
 brazilein.onclick = function() {
   dataPath = '../data/Brazilein.CSV'
-  graphTitle = 'Brazilein spectrum';
+  graphTitle = 'Brazilein Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -60,7 +47,7 @@ brazilein.onclick = function() {
 const chrysin = document.getElementById('chrysin');
 chrysin.onclick = function() {
   dataPath = '../data/Chrysin.CSV'
-  graphTitle = 'Chrysin spectrum';
+  graphTitle = 'Chrysin Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -76,7 +63,7 @@ chrysin.onclick = function() {
 const draciKrev = document.getElementById('draci krev');
 draciKrev.onclick = function() {
   dataPath = '../data/Dračí_krev.CSV'
-  graphTitle = 'Draci krev spectrum';
+  graphTitle = 'Dragon's Blood Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -89,7 +76,7 @@ draciKrev.onclick = function() {
 const indigo = document.getElementById('indigo');
 indigo.onclick = function() {
   dataPath = '../data/Indigo.CSV'
-  graphTitle = 'Indigo spectrum';
+  graphTitle = 'Indigo Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -105,7 +92,7 @@ indigo.onclick = function() {
 const kamenec = document.getElementById('kamenec');
 kamenec.onclick = function() {
   dataPath = '../data/Kamenec.CSV'
-  graphTitle = 'Kamenec spectrum';
+  graphTitle = 'Alum Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -118,7 +105,7 @@ kamenec.onclick = function() {
 const karmin = document.getElementById('karmin');
 karmin.onclick = function() {
   dataPath = '../data/Karmin.CSV'
-  graphTitle = 'Carminic acid spectrum';
+  graphTitle = 'Carmine Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -134,7 +121,7 @@ karmin.onclick = function() {
 const laka = document.getElementById('laka');
 laka.onclick = function() {
   dataPath = '../data/Laka.CSV'
-  graphTitle = 'Laccaic acid spectrum';
+  graphTitle = 'Lac dye Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -150,7 +137,7 @@ laka.onclick = function() {
 const lapl = document.getElementById('lapl');
 lapl.onclick = function() {
   dataPath = '../data/Lapis_lazuli.CSV'
-  graphTitle = 'Lapis lazuli spectrum';
+  graphTitle = 'Lapis lazuli Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -163,7 +150,7 @@ lapl.onclick = function() {
 const malachit = document.getElementById('malachit');
 malachit.onclick = function() {
   dataPath = '../data/Malachit.CSV'
-  graphTitle = 'Malachit spectrum';
+  graphTitle = 'Malachite Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -176,7 +163,7 @@ malachit.onclick = function() {
 const manganovaCern = document.getElementById('manganova cern');
 manganovaCern.onclick = function() {
   dataPath = '../data/Manganova_cern.CSV'
-  graphTitle = 'Manganova cern spectrum';
+  graphTitle = 'Manganese black Raman';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -189,7 +176,7 @@ manganovaCern.onclick = function() {
 const purpurin = document.getElementById('Purpurin');
 purpurin.onclick = function() {
   dataPath = '../data/Purpurin.CSV'
-  graphTitle = 'Purpurin spectrum';
+  graphTitle = 'Purpurin Raman';
   document.getElementById('about').style.visibility = 'collaphiddense';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -205,7 +192,7 @@ purpurin.onclick = function() {
 const quercetin = document.getElementById('quercetin');
 quercetin.onclick = function() {
   dataPath = '../data/Quercetin.CSV'
-  graphTitle = 'Quercetin spectrum';
+  graphTitle = 'Quercetin Raman';
   document.getElementById('about').style.visibility = 'collaphiddense';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");

@@ -1,8 +1,7 @@
-
-const alizarin = document.getElementById('alizarin');
-alizarin.onclick = function() {
-  dataPath = '../data/Alizarin.CSV'
-  graphTitle = 'Alizarin Raman';
+const alizarinIR = document.getElementById('alizarinIR');
+alizarinIR.onclick = function() {
+  dataPath = '../data/Alizarin_IR.CSV'
+  graphTitle = 'Alizarin IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -15,10 +14,10 @@ alizarin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const azurit = document.getElementById('azurit');
-azurit.onclick = function() {
-  dataPath = '../data/Azurit.CSV'
-  graphTitle = 'Azurite Raman';
+const azuritIR = document.getElementById('azuritIR');
+azuritIR.onclick = function() {
+  dataPath = '../data/Azurite_IR.CSV'
+  graphTitle = 'Azurite IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -28,10 +27,10 @@ azurit.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const brazilein = document.getElementById('brazilein');
-brazilein.onclick = function() {
-  dataPath = '../data/Brazilein.CSV'
-  graphTitle = 'Brazilein Raman';
+const brazileinIR = document.getElementById('brazileinIR');
+brazileinIR.onclick = function() {
+  dataPath = '../data/Brazil_IR.CSV'
+  graphTitle = 'Brazilein IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -44,10 +43,10 @@ brazilein.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const chrysin = document.getElementById('chrysin');
-chrysin.onclick = function() {
-  dataPath = '../data/Chrysin.CSV'
-  graphTitle = 'Chrysin Raman';
+const chrysinIR = document.getElementById('chrysinIR');
+chrysinIR.onclick = function() {
+  dataPath = '../data/Chrysin_IR.CSV'
+  graphTitle = 'Chrysin IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -60,10 +59,10 @@ chrysin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const draciKrev = document.getElementById('draci krev');
-draciKrev.onclick = function() {
-  dataPath = '../data/Dračí_krev.CSV'
-  graphTitle = "Dragon's Blood Raman";
+const draciKrevIR = document.getElementById('draci krevIR');
+draciKrevIR.onclick = function() {
+  dataPath = "../data/Dragon's_Blood_IR.CSV"
+  graphTitle = "Dragon's Blood IR";
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -73,10 +72,10 @@ draciKrev.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const indigo = document.getElementById('indigo');
-indigo.onclick = function() {
-  dataPath = '../data/Indigo.CSV'
-  graphTitle = 'Indigo Raman';
+const indigoIR = document.getElementById('indigoIR');
+indigoIR.onclick = function() {
+  dataPath = '../data/Indigo_IR.CSV'
+  graphTitle = 'Indigo IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -89,10 +88,10 @@ indigo.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const kamenec = document.getElementById('kamenec');
-kamenec.onclick = function() {
-  dataPath = '../data/Kamenec.CSV'
-  graphTitle = 'Alum Raman';
+const kamenecIR = document.getElementById('kamenecIR');
+kamenecIR.onclick = function() {
+  dataPath = '../data/Alum_IR.CSV'
+  graphTitle = 'Alum IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -102,10 +101,10 @@ kamenec.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const karmin = document.getElementById('karmin');
-karmin.onclick = function() {
-  dataPath = '../data/Karmin.CSV'
-  graphTitle = 'Carmine Raman';
+const karminIR = document.getElementById('karminIR');
+karminIR.onclick = function() {
+  dataPath = '../data/Carmine_IR.CSV'
+  graphTitle = 'Carmine IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -118,10 +117,10 @@ karmin.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const laka = document.getElementById('laka');
-laka.onclick = function() {
-  dataPath = '../data/Laka.CSV'
-  graphTitle = 'Lac dye Raman';
+const lakaIR = document.getElementById('lakaIR');
+lakaIR.onclick = function() {
+  dataPath = '../data/Lac_Dye_IR.CSV'
+  graphTitle = 'Lac dye IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");
@@ -134,10 +133,10 @@ laka.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const lapl = document.getElementById('lapl');
-lapl.onclick = function() {
-  dataPath = '../data/Lapis_lazuli.CSV'
-  graphTitle = 'Lapis lazuli Raman';
+const laplIR = document.getElementById('laplIR');
+laplIR.onclick = function() {
+  dataPath = '../data/Lapis_lazuli_IR.CSV'
+  graphTitle = 'Lapis lazuli IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -147,10 +146,10 @@ lapl.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const malachit = document.getElementById('malachit');
-malachit.onclick = function() {
-  dataPath = '../data/Malachit.CSV'
-  graphTitle = 'Malachite Raman';
+const malachitIR = document.getElementById('malachitIR');
+malachitIR.onclick = function() {
+  dataPath = '../data/Malachite_IR.CSV'
+  graphTitle = 'Malachite IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -160,10 +159,10 @@ malachit.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const manganovaCern = document.getElementById('manganova cern');
-manganovaCern.onclick = function() {
-  dataPath = '../data/Manganova_cern.CSV'
-  graphTitle = 'Manganese black Raman';
+const manganovaCernIR = document.getElementById('manganova cernIR');
+manganovaCernIR.onclick = function() {
+  dataPath = '../data/Manganese_black_IR.CSV'
+  graphTitle = 'Manganese black IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {
@@ -173,26 +172,10 @@ manganovaCern.onclick = function() {
   setTimeout(plotGraph,500);
 };
 
-const purpurin = document.getElementById('Purpurin');
-purpurin.onclick = function() {
-  dataPath = '../data/Purpurin.CSV'
-  graphTitle = 'Purpurin Raman';
-  document.getElementById('about').style.visibility = 'collaphiddense';
-  document.getElementById('about').style.display = 'none';
-  var img = document.createElement("img");
-  img.src = "../img/Purpurin.png";
-  while (document.getElementById("structure").firstChild) {
-    document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
-  };
-  document.getElementById("structure").appendChild(img);
-  loadData();
-  setTimeout(plotGraph,500);
-};
-
-const quercetin = document.getElementById('quercetin');
-quercetin.onclick = function() {
-  dataPath = '../data/Quercetin.CSV'
-  graphTitle = 'Quercetin Raman';
+const quercetinIR = document.getElementById('quercetinIR');
+quercetinIR.onclick = function() {
+  dataPath = '../data/Quercetin_IR.CSV'
+  graphTitle = 'Quercetin IR';
   document.getElementById('about').style.visibility = 'collaphiddense';
   document.getElementById('about').style.display = 'none';
   var img = document.createElement("img");

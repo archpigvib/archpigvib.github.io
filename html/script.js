@@ -63,7 +63,7 @@ chrysin.onclick = function() {
 const draciKrev = document.getElementById('draci krev');
 draciKrev.onclick = function() {
   dataPath = '../data/Dračí_krev.CSV'
-  graphTitle = 'Dragon's Blood Raman';
+  graphTitle = "Dragon's Blood Raman";
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {

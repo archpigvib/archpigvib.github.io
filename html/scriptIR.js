@@ -1,7 +1,7 @@
 
 const alizarinIR = document.getElementById('alizarinIR');
 alizarin.onclick = function() {
-  dataPath = '../data/Alizarin_IR'
+  dataPath = '../data/Alizarin_IR.CSV'
   graphTitle = 'Alizarin IR';
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
@@ -62,8 +62,8 @@ chrysin.onclick = function() {
 
 const draciKrevIR = document.getElementById('draci krevIR');
 draciKrev.onclick = function() {
-  dataPath = '../data/Dragon's_Blood_IR.CSV'
-  graphTitle = 'Dragon's Blood IR';
+  dataPath = "../data/Dragon's_Blood_IR.CSV"
+  graphTitle = "Dragon's Blood IR";
   document.getElementById('about').style.visibility = 'hidden';
   document.getElementById('about').style.display = 'none';
   while (document.getElementById("structure").firstChild) {

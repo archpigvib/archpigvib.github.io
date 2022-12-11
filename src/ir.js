@@ -1,12 +1,12 @@
-for (key in allRaman) {
+for (key in allIR) {
   document.getElementById(key).onclick = function () {
     key = this.id
-    dataPath = allRaman[key].dataPath;
-    graphTitle = allRaman[key].graphTitle;
+    dataPath = allIR[key].dataPath;
+    graphTitle = allIR[key].graphTitle;
     document.getElementById('about').style.visibility = 'hidden';
     document.getElementById('about').style.display = 'none';
     var img = document.createElement("img");
-    img.src = allRaman[key].imgPath;
+    img.src = allIR[key].imgPath;
     while (document.getElementById("structure").firstChild) {
       document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
     };
@@ -15,3 +15,4 @@ for (key in allRaman) {
     setTimeout(plotGraph, 500);
   };
 };
+

@@ -1,0 +1,17 @@
+for (key in allRaman) {
+  document.getElementById(key).onclick = function () {
+    key = this.id
+    dataPath = allRaman[key].dataPath;
+    graphTitle = allRaman[key].graphTitle;
+    document.getElementById('about').style.visibility = 'hidden';
+    document.getElementById('about').style.display = 'none';
+    var img = document.createElement("img");
+    img.src = allRaman[key].imgPath;
+    while (document.getElementById("structure").firstChild) {
+      document.getElementById("structure").removeChild(document.getElementById("structure").lastChild);
+    };
+    document.getElementById("structure").appendChild(img);
+    loadData(dataPath);
+    setTimeout(plotGraph, 500);
+  };
+};
